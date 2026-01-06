@@ -3,8 +3,9 @@ import { createRoot } from 'react-dom/client'
 // import EnterMessage from './pages/entermessage/EnterMessage'
 // import EMRedirect from './pages/emredirect/EMRedirect'
 // import Register from './pages/register/Register'
-import Home from './pages/home/home'
+// import Home from './pages/home/home'
 // import Login from './pages/login/Login'
+import Messages from './pages/messages/Messages'
 // import './index.css'
 // import App from './App.jsx'
 
@@ -13,7 +14,8 @@ createRoot(document.getElementById('root')).render(
     {/* <EnterMessage /> */}
     {/* <EMRedirect /> */}
     {/* <Register /> */}
-    <Home />
+    {/* <Home /> */}
     {/* <Login /> */}
+    <Messages />
   </StrictMode>,
 )
