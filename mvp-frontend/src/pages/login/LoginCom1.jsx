@@ -4,10 +4,8 @@ const LoginCom1 = () => {
         <>
         <div className="login_contain">
             <form action="" className="login_form">
-                <label htmlFor="username">Username</label><br />
-                <input type="text" name="" id="" /><br />
-                <label htmlFor="password">Password</label><br />
-                <input type="password" /><br />
+                <input type="email" placeholder="Email"/><br />
+                <input type="password" placeholder="Password"/><br />
                 <input type="submit" />
             </form>
         </div>

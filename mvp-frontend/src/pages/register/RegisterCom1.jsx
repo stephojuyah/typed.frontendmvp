@@ -4,14 +4,12 @@ const RegisterCom1 = () => {
         <> 
         <div className="register_contain">
             <form action="" className="register_form">
-                <label htmlFor="first_name">First Name</label><br />
-                <input type="text" /><br />
-                <label htmlFor="last_name">Last Name</label><br />
-                <input type="text" /><br />
-                <label htmlFor="username">Username</label><br />
-                <input type="text" /><br />
-                <label htmlFor="password">Enter a password</label><br />
-                <input type="password" /><br />
+                <input type="text" placeholder="Name"/><br />
+                <input type="email" placeholder="Email"/><br />
+                <input type="date"/><br />
+                <input type="text" placeholder="Address"/><br />
+                <input type="password" placeholder="Password"/><br />
+                <input type="number" placeholder="Transaction Pin"/><br />
                 <input type="submit" />
             </form>
 
