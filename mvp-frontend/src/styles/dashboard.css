@@ -1,0 +1,150 @@
+.dash-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dash-container{
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    justify-content: center;
+    width: 44%;
+    background-color: cornsilk;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.welcome-back{
+    padding-top: 60px;
+    padding-bottom: 15px;
+}
+
+.dash-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.da{
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.65);
+    color: black;
+    width: 70px;
+    text-align: center;
+    height: 30px;
+    border-radius: 20%;
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.spend-nav{
+    color: black;
+}
+
+.aza {
+    padding-top: 20px;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.price-currency{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ngn{
+    padding-top: 12px;
+    border: 1.5px solid black;
+    border-radius: 35%;
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.money-stuff{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+} 
+
+.msa {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    width: 80px;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.transact-div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border: 2px solid black;
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 80px;
+    border-radius: 10px 10px 0 0;
+    /* padding-left: 30px; */
+    /* padding-right: 25px; */
+}
+
+.tt{
+    font-weight: 800;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+    padding-left: 30px;
+    margin-bottom: 0;
+
+}
+
+
+.transaction-names{
+    display: flex;
+    /* margin-bottom: 20px; */
+    padding-left: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.transact-timedate-span{
+    font-size: 11px;
+}
+
+.transact-price-credit{
+    color: green;
+}
+
+.transact-price-debit{
+    color: red;
+}
+
+.view-more{
+    text-align: center;
+}
+
+.da:hover{
+    color: black;
+}
+
+.msa:hover{
+    color: blue;
+    border-bottom: 1.5px solid blue;
+}
+
+.transaction-names:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.view-more:hover{
+    cursor:pointer;
+    color: blue;
+}
