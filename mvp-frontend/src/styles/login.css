@@ -1,0 +1,43 @@
+.login_contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    font-size: 20px;
+
+}
+
+.login-email{
+    margin-top: 40%;
+}
+
+.login-submit-button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: white;
+    border: 1px solid black;
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    height: 50px;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.login-submit-button:hover{
+    background-color: rgba(56, 30, 30, 0.23);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+

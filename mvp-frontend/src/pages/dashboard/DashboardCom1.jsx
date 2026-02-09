@@ -1,5 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import "../../styles/dashboard.css"
+import { Link } from "react-router-dom";
+
+
+
 const DashboardCom1 = () => {
+    
+    const navigate = useNavigate();
+    
+    const handleLogout = () => {
+      localStorage.removeItem("isLoggedIn");
+      navigate("/login");
+    };
 
     return(
         <>
@@ -18,7 +30,7 @@ const DashboardCom1 = () => {
                  <h3 className="ngn">NGN</h3>
                 </div>
                 <div className="money-stuff">
-                    <a href="/transfer" className="msa">Transfer</a>
+                    <Link to="/transfer" className="msa">Transfer</Link>
                     <a href="/airtime" className="msa">Airtime</a>
                     <a href="/internet" className="msa">Internet</a>
                     <a href="/betting" className="msa">Betting</a>
@@ -50,6 +62,9 @@ const DashboardCom1 = () => {
                     <div>
                         <p className="view-more">View more</p>
                     </div>
+                    <button onClick={handleLogout}>
+                      Logout
+                    </button>
                 </div>
             </div>
         </div>

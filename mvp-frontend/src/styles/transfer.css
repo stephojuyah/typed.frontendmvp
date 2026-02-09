@@ -1,0 +1,105 @@
+.transfer-page-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    font-size: 20px;
+
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+select{
+    /* appearance: none; */
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.acc-no{
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.transfer-amount{
+    width: 93.83%;
+}
+
+.narration{
+    width: 100%;
+}
+
+.account-user-name {
+    text-align: right;
+    color: green;
+    font-weight: 700;
+    margin-top: 10px;
+    /* display: none; */
+}
+
+.ben-confirm {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: white;
+    border: 1px solid black;
+    width: 80%;
+    margin-top: 40px;
+    display: flex;
+    height: 50px;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.naira-sign{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 2.5px;
+    /* font-size: 20px; */
+}
+
+.send-confirm{
+    margin-top: 10px;
+}
+
+.enter-otp{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.confirm-button{
+    margin-top: 10px;
+}
+
+.ben-confirm:hover{
+    background-color: rgba(56, 30, 30, 0.23);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.bank-selected:valid{
+    color: black;
+}
+

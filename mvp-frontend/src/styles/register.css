@@ -1,0 +1,51 @@
+.register_contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    font-size: 20px;
+
+}
+
+.register-name {
+    margin-top: 40%;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.register-date {
+    width: 100%;
+}
+
+.register-submit {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: white;
+    border: 1px solid black;
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    height: 50px;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.register-submit:hover{
+    background-color: rgba(56, 30, 30, 0.23);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
