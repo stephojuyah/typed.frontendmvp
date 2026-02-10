@@ -75,7 +75,9 @@ select{
 
 .naira-sign{
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 2.5px;
+
+    padding-bottom: 0px;
+    /* margin-bottom: 200px; */
     /* font-size: 20px; */
 }
 
@@ -103,3 +105,10 @@ select{
     color: black;
 }
 
+.transfer-form{
+    width: 246px;
+}
+
+/* .am-input{
+    margin-left: 12px;
+} */

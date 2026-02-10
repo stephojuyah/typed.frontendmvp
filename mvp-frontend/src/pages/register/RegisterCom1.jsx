@@ -22,7 +22,8 @@
 // export default RegisterCom1
 
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+
 import "../../styles/register.css";
 
 const RegisterCom1 = () => {
@@ -130,6 +131,8 @@ const RegisterCom1 = () => {
           onChange={(e) => setPin(e.target.value)}
           required
         /><br />
+
+        <p className="register_message">Already have an account? <Link to="/login" className="register-link">Login</Link></p>
 
         {error && <p className="error-text">{error}</p>}
 

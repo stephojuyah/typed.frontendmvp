@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import Register from './pages/register/Register'
 import Login from './pages/login/Login'
 import Dashboard from './pages/dashboard/Dashboard'
@@ -21,6 +21,7 @@ createRoot(document.getElementById('root')).render(
 
      <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Navigate to="/login" replace/>} />
         <Route path="/register" element={<Register />} />
         <Route path='/login' element={<Login />} />
         <Route path='/dashboard' element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />

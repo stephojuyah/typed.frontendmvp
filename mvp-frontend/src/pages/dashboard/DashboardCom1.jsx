@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const DashboardCom1 = () => {
     
     const navigate = useNavigate();
-    
+
     const handleLogout = () => {
       localStorage.removeItem("isLoggedIn");
       navigate("/login");
@@ -17,7 +17,7 @@ const DashboardCom1 = () => {
         <>
         <div className="dash-page">
             <div className="dash-container">
-                <h1 className="welcome-back">Welcome back, Jane Doe</h1>
+                <h1 className="welcome-back">Welcome back</h1>
                 <nav className="dash-nav">
                     <a href="" className="da spend-nav">Spend</a>
                     <a href="/save" className="da save-nav">Save</a>
@@ -26,8 +26,8 @@ const DashboardCom1 = () => {
                 </nav>
                 <p className="aza">Naira account - ##########</p>
                 <div className="price-currency">
-                 <h2>₦1,000,000.00</h2>
-                 <h3 className="ngn">NGN</h3>
+                    <div className="div1price"><h2>₦784,038.14</h2> </div>
+                    <div className="div2class"><h3 className="ngn">NGN</h3></div>
                 </div>
                 <div className="money-stuff">
                     <Link to="/transfer" className="msa">Transfer</Link>
@@ -62,7 +62,9 @@ const DashboardCom1 = () => {
                     <div>
                         <p className="view-more">View more</p>
                     </div>
-                    <button onClick={handleLogout}>
+                </div>
+                <div className="logout-div">
+                    <button className="logout-button" onClick={handleLogout}>
                       Logout
                     </button>
                 </div>

@@ -41,3 +41,20 @@ input {
     border: none;
 }
 
+.login_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-link {
+    text-decoration: none;
+    color: blue;
+}
+
+.loginpassname {
+    margin-bottom: 10px;
+}
+
+.register_message {
+    margin-top: 1px;
+}
