@@ -1,27 +1,9 @@
-// import "../../styles/login.css"
-// const LoginCom1 = () => {
-
-//     return(
-//         <>
-//         <div className="login_contain">
-//             <form action="" className="login_form">
-//                 <input className="login-email" type="email" placeholder="Email"/><br />
-//                 <input type="password" placeholder="Password"/><br />
-//                 <input type="submit" className="login-submit-button"/>
-//             </form>
-//         </div>
-//         </>
-//     )
-// }
-
-// export default LoginCom1
-
 import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "../../styles/login.css";
 
 const MAX_ATTEMPTS = 3;
-const LOCK_TIME = 60 * 1000; // 1 minute
+const LOCK_TIME = 60 * 1000; 
 
 const LoginCom1 = () => {
   const navigate = useNavigate();
@@ -34,7 +16,6 @@ const LoginCom1 = () => {
 
   const baseURL = "https://bank-q7ki.vercel.app";
 
-  // Load lock state on mount
   useEffect(() => {
     const lockUntil = localStorage.getItem("lockUntil");
     if (lockUntil) {
@@ -47,7 +28,6 @@ const LoginCom1 = () => {
     }
   }, []);
 
-  // Countdown timer
   useEffect(() => {
     if (countdown <= 0) return;
 
@@ -74,7 +54,6 @@ const LoginCom1 = () => {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    // Check if locked
     const lockUntil = localStorage.getItem("lockUntil");
     if (lockUntil && Date.now() < lockUntil) {
       setError(`Too many requests. Try again in ${countdown}s`);
@@ -98,10 +77,10 @@ const LoginCom1 = () => {
         throw new Error(data.message || "Invalid login details");
       }
 
-      // ✅ SUCCESS
       resetLock();
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("userEmail", email);
+    //   alert("Login successful")
       navigate("/dashboard");
 
     } catch (err) {

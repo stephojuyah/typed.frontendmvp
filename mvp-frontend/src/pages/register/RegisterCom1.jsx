@@ -1,26 +1,3 @@
-// import "../../styles/register.css"
-// const RegisterCom1 = () => {
-
-//     return(
-//         <> 
-//         <div className="register_contain">
-//             <form action="" className="register_form">
-//                 <input className="register-name" type="text" placeholder="Name"/><br />
-//                 <input type="email" placeholder="Email"/><br />
-//                 <input className="register-date" type="date"/><br />
-//                 <input type="text" placeholder="Address"/><br />
-//                 <input type="password" placeholder="Password"/><br />
-//                 <input type="number" placeholder="Transaction Pin"/><br />
-//                 <input className="register-submit" type="submit" />
-//             </form>
-
-//         </div>
-//         </>
-//     )
-// }
-
-// export default RegisterCom1
-
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
@@ -69,7 +46,6 @@ const RegisterCom1 = () => {
         throw new Error(data.message || "Registration failed");
       }
 
-      // ✅ Success → go to login
       navigate("/login");
 
     } catch (err) {
